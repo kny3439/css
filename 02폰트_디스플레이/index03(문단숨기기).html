@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            border: 1px solid #000;
+            width: 300px;
+            height: 100px;
+            /* overflow - 컨텐츠 영역을 넘어갈 때 어떻게 처리
+               visible - 기본값
+               scroll - 내용이 없어도 스크롤을 무조건 만듦
+               auto - 내용이 넘칠 떄만 스크롤을 만듦
+               hidden - 넘친 내용은 숨기기
+            */  
+            overflow: auto;
+        }
+
+        div{
+            border: 1px solid #000;
+            width: 300px;
+            height: 100px;
+            white-space: nowrap;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- 블럭요소의 박스크기를 지정할 땐 height와 width속성을 사용한다. -->
+    <p>
+        어떤 생각을 일정한 형식에 따라 글자로 나타낸 것. 시·소설·수필·희곡 등을 비롯하여, 일기·편지·논설·신문 기사 등과 같이 일정한 내용을 담은 모든 기록을 두루 이르는 말임. 세는 단위는 줄·편.어떤 생각을 일정한 형식에 따라 글자로 나타낸 것. 시·소설·수필·희곡 등을 비롯하여, 일기·편지·논설·신문 기사 등과 같이 일정한 내용을 담은 모든 기록을 두루 이르는 말임. 세는 단위는 줄·편.
+    </p>
+
+    <div>
+        어떤 생각을 일정한 형식에 따라 글자로 나타낸 것. 시·소설·수필·희곡 등을 비롯하여, 일기·편지·논설·신문 기사 등과 같이 일정한 내용을 담은 모든 기록을 두루 이르는 말임. 세는 단위는 줄·편.어떤 생각을 일정한 형식에 따라 글자로 나타낸 것. 시·소설·수필·희곡 등을 비롯하여, 일기·편지·논설·신문 기사 등과 같이 일정한 내용을 담은 모든 기록을 두루 이르는 말임. 세는 단위는 줄·편.
+    </div>
+
+</body>
+</html>

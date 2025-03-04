@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box > li> a:hover{color: rgb(255, 132, 132); transition: .4s;}
+        .abc:focus{border: 3px solid #ff8848; outline: none;}
+        .def:active{color: rgb(93, 131, 255);}
+    </style>
+</head>
+<body>
+    
+    <ul class="box">
+        <li><a href="#">목록</a></li>
+        <li><a href="#">목록</a></li>
+        <li><a href="#">목록</a></li>
+    </ul>
+
+    <!-- focus - 인풋태그에 사용한다 -->
+     <input type="text" class="abc">
+
+     <p class="def">active는 클릭할 때 의미</p>
+
+</body>
+</html>

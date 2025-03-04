@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .reply {
+            border: 1px solid #000;
+            width: 500px;
+            margin: auto;
+            position: relative;
+        }
+
+        .reply img.first_image {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            transition: .4s;
+
+        }
+
+        .reply>.content {
+           padding: 10px 10px 10px 80px;
+           background-color: rgb(18, 39, 102);
+        }
+
+        .content textarea {
+            width: 100%;
+            min-height: 100px;
+            resize: none;
+            background-color: #ffffff77;
+            border: 1px solid #fff700;
+        }
+
+        .control {
+            overflow: hidden;
+        }
+
+        .control .input-area {
+            float: left;
+        }
+
+        .control .input-area input {
+            display: block;
+            margin: 5px 0;
+            background-color: #ffffff77;
+            border: 1px solid #fff700;
+        }
+
+        .control button {
+            float: right;
+        }
+
+        .title {
+            border-top: 1px solid #000;
+            position: relative;
+            padding: 20px;
+            background-color: #fff98f;
+        }
+
+        .title img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+
+        }
+
+        .title .title_inner {
+            padding-left: 70px;
+
+        }
+        .title .title_inner {
+            overflow: hidden;
+        }
+        .title .title_inner .content{
+            float: left;
+        }
+        .title .title_inner .btn{
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reply">
+        <img src="/img/picka.png" alt="프로필" class="first_image" style="width: 60px;">
+        <div class="content">
+            <textarea name="" id=""></textarea>
+            <div class="control">
+                <div class="input-area">
+                    <input type="text">
+                    <input type="text">
+                </div>
+                <button>등록</button>
+            </div>
+        </div>
+
+        <div class="title">
+            <img src="https://cdn.pixabay.com/photo/2021/12/26/17/31/pokemon-6895600_1280.png" alt=""
+                style="width: 90px;" class="second_image">
+            <div class="title_inner">
+                <div class="content">
+                    <b>제목</b>
+                    <p>내용</p>
+                </div>
+                <div class="btn">
+                    <button>삭제</button>
+                    <button>수정</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
