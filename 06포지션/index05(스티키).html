@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        .menu {
+            text-align: center;
+            background-color: rgb(50, 50, 50);
+
+        }
+
+        .menu ul li {
+            display: inline-block;
+        }
+
+        .menu ul li a {
+            display: inline-block;
+            padding: 10px;
+            color: #fff;
+        }
+
+
+        #header {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="menu">
+            <ul>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <style>
+        #section {
+            margin-top: 41px;
+        }
+
+        .box1 {
+            height: 500px;
+            background-color: bisque;
+        }
+
+        .box2 {
+            /* 
+                sticky는  static가만히 있다가 특정 위치에서 fixed로 바뀌는 속성
+                1. top, bottom, left, right 중 하나를 반드시 적용 (fixed로 바뀌는 위치)
+                2. 부모태그에 overflow 속성이 있으면 적용이 안된다
+            */
+            position: sticky;
+            top: 41px;
+            background-color: cadetblue;
+        }
+
+        .box3 {
+            height: 1000px;
+            background-color: burlywood;
+        }
+    </style>
+
+
+    <section id="section">
+        <div class="box1">내용</div>
+        <div class="box2">스티키가 적용되는 영역</div>
+        <div class="box3">내용</div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+}
+
+header {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+header .social {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+}
+
+header .social li {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+header .social li:nth-child(1) {
+    background-image: url(./img/social.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header .social li:nth-child(2) {
+    background-image: url(./img/social.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -32px;
+}
+
+header .social li:nth-child(3) {
+    background-image: url(./img/social.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -64px;
+}
+
+header .social li:nth-child(4) {
+    background-image: url(./img/social.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -96px;
+}
+
+header .social li a {
+    display: inline-block;
+}
+
+header .login {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    font-size: 12px;
+}
+
+header .login li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+header nav {
+    width: 750px;
+    height: auto;
+    margin: 20px auto;
+}
+
+header nav ul li ul{
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+header nav ul li a{
+    float: left;
+    width: 20%;
+    text-align: center;
+    font-size: 15px;
+    color: #939393;
+    padding: 30px;
+    transition: .35s;
+}
+header nav ul li a:hover{
+    color: #000;
+}
+
+.main {
+    height: 500px;
+    background-image: url(./img/main.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 165px;
+    border-top: 3px solid #ff0000;
+    color: #fff;
+}
+.main  h1, .main p{
+    text-align: center;
+}
+.main  h1{
+    font-size: 55px;
+    font-weight: 500;
+    letter-spacing: 20px;
+    padding-top: 100px;
+}
+.main p{
+    letter-spacing: 3px;
+    font-size: 1.7rem;
+    padding-top: 30px;
+    font-weight: 600;
+}
+.content {
+    margin-bottom: 150px;
+}
+.content .content-title h2{
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 3px dashed #ddd;
+}
+.content .list {
+    margin-top: 30px;
+}
+.content .list ul{
+    width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+.content .list ul li{
+    float: left;
+    width: 33.3333%;
+    color: #b1b1b1;
+    font-weight: 600;
+    font-size: 18px;
+}
+footer{
+    border-top: 2px solid #e1e1e1;
+}
+footer strong{
+    float: left;
+    padding: 10px ;
+}
+footer p{
+    float: right;
+    padding: 10px 20px;
+}

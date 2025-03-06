@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        .menu {
+            text-align: center;
+            background-color: rgb(50, 50, 50);
+
+        }
+
+        .menu ul li {
+            display: inline-block;
+        }
+
+        .menu ul li a {
+            display: inline-block;
+            padding: 10px;
+            color: #fff;
+        }
+
+        .floating-btn {
+            background-color: yellow;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            z-index: 10;
+            /* 포지션이 겹치게 되면 z축의 우선순위를 지정하는데 */
+        }
+
+        #header {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <aside>
+        <div class="floating-btn">
+            TOP
+        </div>
+    </aside>
+    <header id="header">
+        <nav class="menu">
+            <ul>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <section style="height: 150vh; margin-top: 41px;">
+        .... ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    </section>
+</body>
+
+</html>
